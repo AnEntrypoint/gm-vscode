@@ -1,0 +1,96 @@
+{
+  "name": "gm-vscode",
+  "version": "2.0.5",
+  "publisher": "gm",
+  "displayName": "Glootie - GM State Machine",
+  "description": "Advanced Claude Code plugin with WFGY integration, MCP tools, and automated hooks",
+  "author": "AnEntrypoint",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AnEntrypoint/gm-vscode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AnEntrypoint/gm-vscode/issues"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "AI",
+    "Debuggers",
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "contributes": {
+    "views": {
+      "gm-explorer": [
+        {
+          "id": "gm.state",
+          "name": "State Machine"
+        },
+        {
+          "id": "gm.agents",
+          "name": "Agents"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "gm.activate",
+        "title": "Glootie: Activate"
+      },
+      {
+        "command": "gm.deactivate",
+        "title": "Glootie: Deactivate"
+      },
+      {
+        "command": "gm.showState",
+        "title": "Glootie: Show State"
+      }
+    ],
+    "configuration": {
+      "title": "Glootie",
+      "properties": {
+        "gm.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable Glootie extension"
+        },
+        "gm.logLevel": {
+          "type": "string",
+          "enum": [
+            "debug",
+            "info",
+            "warn",
+            "error"
+          ],
+          "default": "info"
+        },
+        "gm.autoActivate": {
+          "type": "boolean",
+          "default": true,
+          "description": "Auto-activate on startup"
+        }
+      }
+    }
+  },
+  "keywords": [
+    "ai",
+    "state-machine",
+    "gm",
+    "gm",
+    "automation",
+    "development"
+  ],
+  "main": "./extension.js",
+  "files": [
+    "extension.js",
+    "agents/",
+    "skills/",
+    ".github/",
+    "README.md"
+  ]
+}
