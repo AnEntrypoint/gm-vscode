@@ -1,6 +1,6 @@
 {
   "name": "gm-vscode",
-  "version": "2.0.9",
+  "version": "2.0.11",
   "publisher": "gm",
   "displayName": "GM - GM State Machine",
   "description": "Advanced Claude Code plugin with WFGY integration, MCP tools, and automated hooks",
