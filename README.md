@@ -1,4 +1,4 @@
-# Glootie - GM State Machine for VSCode
+# GM - GM State Machine for VSCode
 
 An AI-powered state machine extension for Visual Studio Code with dynamic adaptation and autonomous decision-making.
 
@@ -13,14 +13,14 @@ An AI-powered state machine extension for Visual Studio Code with dynamic adapta
 
 ## Installation
 
-1. Install from VSCode Extension Marketplace (search for "Glootie")
+1. Install from VSCode Extension Marketplace (search for "GM")
 2. Or manually: Clone this repo and run `vsce package` then install the VSIX file
 
 ## Quick Start
 
-Once installed, the extension activates automatically. Access Glootie via:
-- Command palette: `Ctrl+Shift+P` → "Glootie: Activate"
-- View: Look for "Glootie" panel in the Explorer sidebar
+Once installed, the extension activates automatically. Access GM via:
+- Command palette: `Ctrl+Shift+P` → "GM: Activate"
+- View: Look for "GM" panel in the Explorer sidebar
 
 ## Configuration
 

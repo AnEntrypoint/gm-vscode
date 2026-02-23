@@ -2,7 +2,7 @@
   "name": "gm-vscode",
   "version": "2.0.5",
   "publisher": "gm",
-  "displayName": "Glootie - GM State Machine",
+  "displayName": "GM - GM State Machine",
   "description": "Advanced Claude Code plugin with WFGY integration, MCP tools, and automated hooks",
   "author": "AnEntrypoint",
   "license": "MIT",
@@ -40,24 +40,24 @@
     "commands": [
       {
         "command": "gm.activate",
-        "title": "Glootie: Activate"
+        "title": "GM: Activate"
       },
       {
         "command": "gm.deactivate",
-        "title": "Glootie: Deactivate"
+        "title": "GM: Deactivate"
       },
       {
         "command": "gm.showState",
-        "title": "Glootie: Show State"
+        "title": "GM: Show State"
       }
     ],
     "configuration": {
-      "title": "Glootie",
+      "title": "GM",
       "properties": {
         "gm.enabled": {
           "type": "boolean",
           "default": true,
-          "description": "Enable Glootie extension"
+          "description": "Enable GM extension"
         },
         "gm.logLevel": {
           "type": "string",

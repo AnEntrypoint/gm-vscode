@@ -1,6 +1,6 @@
 const vscode = require('vscode');
 
-class GlootieExtension {
+class GmExtension {
   constructor(context) {
     this.context = context;
     this.isActive = false;
@@ -8,7 +8,7 @@ class GlootieExtension {
 
   async activate() {
     this.isActive = true;
-    console.log('Glootie extension activated');
+    console.log('GM extension activated');
     this.registerCommands();
     this.registerViews();
     this.setupConfiguration();
@@ -18,13 +18,13 @@ class GlootieExtension {
   registerCommands() {
     this.context.subscriptions.push(
       vscode.commands.registerCommand('gm.activate', () => {
-        vscode.window.showInformationMessage('Glootie activated');
+        vscode.window.showInformationMessage('GM activated');
       }),
       vscode.commands.registerCommand('gm.deactivate', () => {
-        vscode.window.showInformationMessage('Glootie deactivated');
+        vscode.window.showInformationMessage('GM deactivated');
       }),
       vscode.commands.registerCommand('gm.showState', () => {
-        vscode.window.showInformationMessage('Glootie state machine');
+        vscode.window.showInformationMessage('GM state machine');
       })
     );
   }
@@ -37,7 +37,7 @@ class GlootieExtension {
   }
 
   showCodeSearchInfo() {
-    const message = 'Glootie uses semantic code search - describe intent ("find auth logic") not regex. Use code-search to explore your codebase across files. Open README.md for details.';
+    const message = 'GM uses semantic code search - describe intent ("find auth logic") not regex. Use code-search to explore your codebase across files. Open README.md for details.';
     vscode.window.showInformationMessage(message, 'Learn More').then(selection => {
       if (selection === 'Learn More') {
         vscode.commands.executeCommand('workbench.action.openAbstractDialog');
@@ -47,14 +47,14 @@ class GlootieExtension {
 
   deactivate() {
     this.isActive = false;
-    console.log('Glootie extension deactivated');
+    console.log('GM extension deactivated');
   }
 }
 
 let gm;
 
 function activate(context) {
-  gm = new GlootieExtension(context);
+  gm = new GmExtension(context);
   gm.activate();
 }
 
